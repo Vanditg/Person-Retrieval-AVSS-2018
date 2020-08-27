@@ -44,3 +44,8 @@ python Video_demo_person_identification.py
 This will read the input video file and based on the queries produces the Bounding-Box and Person Coordinates text file under the output folder.  
 
 Many thanks to [Matterport](https://github.com/matterport/Mask_RCNN) for the Mask R-CNN code.  
+
+## Media Coverage  
+
+[New Scientist](https://goo.gl/Xj3bUA), [The Next Web](https://goo.gl/5mUyUT), [Digital Trends](https://tnw.to/I1gTz), [Make Tech Easier](https://goo.gl/Yb2FaW), [Tech The Lead](https://goo.gl/ZBn4Bs), [Outerplaces](https://goo.gl/rniz3N), [IMPORT AI by Jack Clark](https://goo.gl/SY8Lux), [Business Recorder](https://goo.gl/XAvc4q), [Inshorts](https://inshorts.com/en/news/indian-teams-ai-finds-people-in-videos-via-clothes-height-1540395247981), and [RT](https://goo.gl/9HbkgV)  
+
