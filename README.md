@@ -12,4 +12,35 @@ Implementation of our [IEEE AVSS 2018](https://dblp.org/db/conf/avss/avss2018.ht
 
 This code was initially tested on an Ubuntu 16.04 system using Keras 2.0.8 with Tensorflow 1.12 backend.  
 
+![Alt Text](https://github.com/Vanditg/Person-Retrieval-AVSS-2018/blob/master/readme_files/Person_Retrieval.jpeg)  
 
+**The paper proposes a deep learning-based linear filtering approach for person retrieval using height, cloth color, and gender.**  
+
+## Installation  
+
+1) Clone this repository.  
+```
+git clone https://github.com/Vanditg/Person-Retrieval-AVSS-2018.git  
+```  
+
+2) In the repository, execute `pip install -r requirements.txt` to install all the necessary libraries.  
+
+3) Three deep learning models are used inorder to filter out the desired person.  
+	1) *Mask_RCNN:- Used to determine the coordinates of the person and fetch the pixelwise segmentation*  
+	2) *gender_model:- Used to determine gender of the person*  
+	3) *color_model:- Used to determine torso color of the person*  
+
+4) Download the pretrained weights.
+	1) Mask_RCNN [pretrained weights](https://drive.google.com/drive/folders/1IQKvcGuxvT80dqWLDzRKmF-wsmDKzxnG?usp=sharing) and save it in root directory  
+	2) gender_model [pretrained weights](https://drive.google.com/drive/folders/1IQKvcGuxvT80dqWLDzRKmF-wsmDKzxnG?usp=sharing) and save it in /modalities/gender/  
+	3) color_model [pretrained weight](https://drive.google.com/drive/folders/1IQKvcGuxvT80dqWLDzRKmF-wsmDKzxnG?usp=sharing) and save it in /modalities/torso_color/   
+
+### Usage
+
+To use run
+```
+python Video_demo_person_identification.py
+```  
+This will read the input video file and based on the queries produces the Bounding-Box and Person Coordinates text file under the output folder.  
+
+Many thanks to [Matterport](https://github.com/matterport/Mask_RCNN) for the Mask R-CNN code.  
